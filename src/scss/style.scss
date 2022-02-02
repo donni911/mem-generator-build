@@ -1,0 +1,22 @@
+@import "fonts";
+body {
+    background: green;
+    font-family: "OpenSans";
+
+    span {
+        color: rgb(98, 82, 114);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: purple;
+        font-family: "OpenSans";
+    }
+}
+
+@media (max-width: 768px) {
+    span {
+        color: green;
+    }
+}
