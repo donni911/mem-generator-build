@@ -1,4 +1,73 @@
-@import "fonts";
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
   --primary: #04aa6d;
   --secondary: #f4c850;
@@ -29,13 +98,16 @@ a {
   color: white;
   text-decoration: underline;
 }
+
 a:active {
   color: white;
 }
+
 .heading {
   color: var(--primary);
   text-align: center;
 }
+
 .c-column {
   display: flex;
   flex-direction: column;
@@ -57,6 +129,7 @@ a:active {
   transition: border-color 0.2s;
   font-size: 24px;
 }
+
 .mem-input::placeholder {
   color: var(--primary);
 }
@@ -70,7 +143,6 @@ a:active {
   margin: 0 auto;
   padding: 25px 0px;
   width: 550px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,15 +164,12 @@ a:active {
   min-width: 150px;
   border-radius: 10px;
   padding: 10px;
-
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
   opacity: 0;
   visibility: hidden;
   pointer-events: all;
   transform: translate(0px, 0px);
-
   transition: 0.3s;
 }
 
@@ -140,16 +209,18 @@ input::-webkit-file-upload-button {
   cursor: pointer;
 }
 
-input[type="file" i] {
+input[type=file i] {
   display: block;
   appearance: none;
   cursor: pointer;
   align-items: baseline;
   color: var(--primary);
 }
+
 .mem-download__wrapper:hover .mem-download__button {
   background: var(--secondary);
 }
+
 .mem-download__wrapper:hover .mem-download {
   opacity: 1;
   visibility: visible;
@@ -164,6 +235,5 @@ input[type="file" i] {
 #mem {
   width: 100%;
   max-height: 250px;
-
   object-fit: contain;
 }
